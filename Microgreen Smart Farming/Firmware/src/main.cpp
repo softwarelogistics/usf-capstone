@@ -229,7 +229,9 @@ void loop() {
         "%, ratio: " + String(soilRatio, 3)
       );
 
-      ioValues.setValue(5, String(soilPct, 1));
+      ioValues.setValue(5, String(soilRaw, 1));
+      ioValues.setValue(6, String(soilPct, 1));
+      ioValues.setValue(7, String(soilRatio, 1));
 
       const float TOO_DRY_PERCENT = 30.0;
       const float TOO_WET_PERCENT = 70.0;
